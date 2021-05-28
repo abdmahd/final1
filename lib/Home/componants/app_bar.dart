@@ -1,3 +1,4 @@
+import 'package:final_project/Client/HomePage.dart';
 import 'package:final_project/constants.dart';
 import 'package:flutter/material.dart';
 
@@ -39,7 +40,16 @@ class CustomAppBar extends StatelessWidget {
           Spacer(),
           MenuItem(
             title: "Client-Area",
-            press: () {},
+            press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return HomePage();
+                    },
+                  ),
+                );
+              },
           ),
           MenuItem(
             title: "Artisan-Area",
