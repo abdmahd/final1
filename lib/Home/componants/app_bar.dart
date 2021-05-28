@@ -41,15 +41,15 @@ class CustomAppBar extends StatelessWidget {
           MenuItem(
             title: "Client-Area",
             press: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) {
-                      return HomePage();
-                    },
-                  ),
-                );
-              },
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return HomePage();
+                  },
+                ),
+              );
+            },
           ),
           MenuItem(
             title: "Artisan-Area",
