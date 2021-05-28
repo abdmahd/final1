@@ -1,3 +1,6 @@
+import 'package:final_project/Admin/HomeAdmin.dart';
+import 'package:final_project/Artisan/HomeArt.dart';
+import 'package:final_project/Client/HomePage.dart';
 import 'package:final_project/HOME/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Final project',
+      title: 'Final Project',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
@@ -20,6 +23,9 @@ class MyApp extends StatelessWidget {
       initialRoute: HomeScreen.routeName,
       routes: {
         HomeScreen.routeName: (context) => HomeScreen(),
+        HomePage.routeName:(context)=>HomePage(),
+        HomeArt.routeName:(context)=>HomeArt(),
+        HomeAdmin.routeName:(context)=>HomeAdmin(),
       },
     );
   }
