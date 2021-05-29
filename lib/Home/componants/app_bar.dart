@@ -1,21 +1,21 @@
-import 'package:final_project/Client/HomePage.dart';
+import 'package:final_project/Artisan/HomeArtisan.dart';
+import 'package:final_project/Client/homepage.dart';
 import 'package:final_project/constants.dart';
 import 'package:flutter/material.dart';
-
 import 'components/default_button.dart';
 
 class CustomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        margin: EdgeInsets.all(20),
-        padding: EdgeInsets.all(20),
+        margin: EdgeInsets.all(10),
+        padding: EdgeInsets.all(05),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(30),
           boxShadow: [
             BoxShadow(
-              offset: Offset(0, 2),
+              offset: Offset(0, 20),
               blurRadius: 30,
               color: Colors.blue,
             ),
@@ -45,7 +45,7 @@ class CustomAppBar extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return HomePage();
+                    return HomeArt();
                   },
                 ),
               );
@@ -53,11 +53,29 @@ class CustomAppBar extends StatelessWidget {
           ),
           MenuItem(
             title: "Artisan-Area",
-            press: () {},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return HomePage();
+                  },
+                ),
+              );
+            },
           ),
           MenuItem(
             title: "Contact",
-            press: () {},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return HomePage();
+                  },
+                ),
+              );
+            },
           ),
           MenuItem(
             title: "About",

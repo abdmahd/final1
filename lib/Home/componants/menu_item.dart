@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:final_project/constants.dart';
+import '../../constants.dart';
 
 class MenuItem extends StatelessWidget {
   final String title;

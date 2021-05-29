@@ -11,8 +11,8 @@ class Body extends StatelessWidget {
         children: <Widget>[
           Text(
             "The Artisan Best site".toUpperCase(),
-            style: Theme.of(context).textTheme.headline3!.copyWith(
-                  color: kTextcolor,
+            style: Theme.of(context).textTheme.headline2!.copyWith(
+                  color: Colors.,
                   fontWeight: FontWeight.bold,
                 ),
           ),

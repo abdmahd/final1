@@ -1,6 +1,6 @@
-import 'package:final_project/Admin/HomeAdmin.dart';
-import 'package:final_project/Artisan/HomeArt.dart';
-import 'package:final_project/Client/HomePage.dart';
+import 'package:final_project/Artisan/HomeArtisan.dart';
+import 'package:final_project/Client/homepage.dart';
+import 'package:final_project/HOME/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,12 +18,12 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomePage(),
-      initialRoute: HomePage.routeName,
+      home: HomeScreen(),
+      initialRoute: HomeScreen.routeName,
       routes: {
+        HomeScreen.routeName: (context) => HomeScreen(),
         HomePage.routeName: (context) => HomePage(),
         HomeArt.routeName: (context) => HomeArt(),
-        HomeAdmin.routeName: (context) => HomeAdmin(),
       },
     );
   }
