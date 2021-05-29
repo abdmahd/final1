@@ -1,7 +1,8 @@
 import 'package:final_project/Artisan/HomeArtisan.dart';
-import 'package:final_project/Client/homepage.dart';
-import 'package:final_project/HOME/home_screen.dart';
+import 'package:final_project/Client/Login/Login_Screen.dart';
 import 'package:flutter/material.dart';
+
+import 'Client/Home/HomePage.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,13 +18,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
+        scaffoldBackgroundColor: Colors.white,
       ),
-      home: HomeScreen(),
-      initialRoute: HomeScreen.routeName,
+      home: HomePage(),
+      initialRoute: HomePage.routeName,
       routes: {
-        HomeScreen.routeName: (context) => HomeScreen(),
         HomePage.routeName: (context) => HomePage(),
         HomeArt.routeName: (context) => HomeArt(),
+        LoginScreen.routeName: (context) => LoginScreen(),
       },
     );
   }

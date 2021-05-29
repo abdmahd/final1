@@ -1,8 +1,7 @@
 import 'package:final_project/Artisan/about.dart';
-import 'package:final_project/Home/home_screen.dart';
+import 'package:final_project/Client/Home/HomePage.dart';
 import 'package:flutter/material.dart';
 import './about.dart';
-import '../constants.dart';
 
 class HomeArt extends StatelessWidget {
   static const routeName = '/HomeArt';
@@ -53,10 +52,11 @@ class MenuBar extends StatelessWidget {
       onTap: () {},
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 15),
+        // ignore: deprecated_member_use
         child: RaisedButton(
           onPressed: () {
             Navigator.push(
-                context, MaterialPageRoute(builder: (context) => HomeScreen()));
+                context, MaterialPageRoute(builder: (context) => HomePage()));
           },
           child: Text(
             "Home page".toUpperCase(),
