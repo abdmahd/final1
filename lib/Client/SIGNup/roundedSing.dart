@@ -1,14 +1,14 @@
 // ignore: unused_import
-import 'package:final_project/Client/Login/Login_Screen.dart';
-import 'package:final_project/Client/SIGNup/Sign_up.dart';
+import 'package:final_project/Artisan/HomeArtisan.dart';
+import 'package:final_project/Client/HomeClient/HomeClient.dart';
 import 'package:flutter/material.dart';
 
 import '../../constants.dart';
 
-class ButtonSignup extends StatelessWidget {
+class RoundedSIGN extends StatelessWidget {
   final String text;
   final Color color, textcolor;
-  const ButtonSignup({
+  const RoundedSIGN({
     Key? key,
     required this.text,
     this.color = kPrimaryColor,
@@ -29,7 +29,7 @@ class ButtonSignup extends StatelessWidget {
             color: color,
             onPressed: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return SignScreen();
+                return HomeClient();
               }));
             },
             child: Text(

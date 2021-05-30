@@ -1,3 +1,4 @@
+import 'package:final_project/Client/SIGNup/body.dart';
 import 'package:flutter/material.dart';
 
 class SignScreen extends StatelessWidget {
@@ -5,9 +6,7 @@ class SignScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text("hello world ffjfjfjfj"),
-      ),
+      body: Body(),
     );
   }
 }

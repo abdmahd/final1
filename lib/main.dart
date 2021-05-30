@@ -1,4 +1,5 @@
 import 'package:final_project/Artisan/HomeArtisan.dart';
+import 'package:final_project/Client/HomeClient/HomeClient.dart';
 import 'package:final_project/Client/Login/Login_Screen.dart';
 import 'package:final_project/Client/SIGNup/Sign_up.dart';
 import 'package:flutter/material.dart';
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
         HomeArt.routeName: (context) => HomeArt(),
         LoginScreen.routeName: (context) => LoginScreen(),
         SignScreen.routeName: (context) => SignScreen(),
+        HomeClient.routeName: (context) => HomeClient(),
       },
     );
   }
