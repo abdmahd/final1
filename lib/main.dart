@@ -1,5 +1,6 @@
 import 'package:final_project/Artisan/HomeArtisan.dart';
 import 'package:final_project/Client/Login/Login_Screen.dart';
+import 'package:final_project/Client/SIGNup/Sign_up.dart';
 import 'package:flutter/material.dart';
 
 import 'Client/Home/HomePage.dart';
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
         HomePage.routeName: (context) => HomePage(),
         HomeArt.routeName: (context) => HomeArt(),
         LoginScreen.routeName: (context) => LoginScreen(),
+        SignScreen.routeName: (context) => SignScreen(),
       },
     );
   }
